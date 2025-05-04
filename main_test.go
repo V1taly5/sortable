@@ -19,7 +19,7 @@ func TestIsSortable(t *testing.T) {
 			expected: true,
 		},
 		{
-			name: "example 1 impossible",
+			name: "example 2 impossible",
 			matrix: [][]int{
 				{10, 20, 30},
 				{1, 1, 1},

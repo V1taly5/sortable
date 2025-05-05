@@ -14,8 +14,8 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 
-	count, _ := strconv.Atoi(strings.TrimSpace(scanner.Text()))
-	if count <= 0 {
+	count, err := strconv.Atoi(strings.TrimSpace(scanner.Text()))
+	if err != nil || count <= 0 {
 		return
 	}
 
